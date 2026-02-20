@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACS x Reworld Media | Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #020617 0%, #0f172a 100%); }
+        .gradient-text { background: linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .nav-link { position: relative; transition: color 0.3s; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #3b82f6; transition: width 0.3s; }
+        .nav-link:hover::after { width: 100%; }
+        .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-10px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass py-4 px-8 flex justify-between items-center text-white">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center p-2">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/14782032869166955403" alt="Logo ACS" class="w-full h-auto">
+            </div>
+            <span class="font-extrabold tracking-tighter text-xl">ACS SAILING</span>
+        </div>
+        <div class="hidden md:flex gap-10 font-semibold text-sm uppercase tracking-widest">
+            <a href="#accueil" class="nav-link">Accueil</a>
+            <a href="#vision" class="nav-link">ROI Média</a>
+            <a href="#impact" class="nav-link">Impact</a>
+            <a href="#offres" class="nav-link">Partenariat</a>
+        </div>
+        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-bold transition shadow-lg shadow-blue-500/30">
+            Contact
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="accueil" class="min-h-screen gradient-bg flex flex-col justify-center items-center text-center px-6 pt-20">
+        <span class="inline-block px-4 py-1 rounded-full border border-blue-500/30 text-blue-400 text-sm font-bold tracking-widest uppercase mb-8">Partenariat Stratégique 2025</span>
+        <h1 class="text-5xl md:text-8xl font-extrabold text-white mb-8 leading-none">
+            Albert Crew Sailing <br><span class="gradient-text">x Reworld Media</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-400 max-w-3xl leading-relaxed mb-12">
+            Propulsez vos marques au cœur de l'élite technologique de demain. L'alliance de l'exigence des Mines Paris et de l'agilité d'Albert School.
+        </p>
+        <div class="flex flex-wrap justify-center gap-12 mt-8">
+            <div class="text-center">
+                <p class="text-5xl font-black text-white mb-2">1<sup>er</sup></p>
+                <p class="text-blue-400 text-xs font-bold uppercase tracking-widest">Événement Étudiant Européen</p>
+            </div>
+            <div class="text-center">
+                <p class="text-5xl font-black text-white mb-2">30</p>
+                <p class="text-blue-400 text-xs font-bold uppercase tracking-widest">Profils Data de Haut Niveau</p>
+            </div>
+            <div class="text-center">
+                <p class="text-5xl font-black text-white mb-2">12<sup>e</sup></p>
+                <p class="text-blue-400 text-xs font-bold uppercase tracking-widest">Performance sur 50 Équipages</p>
+            </div>
+        </div>
+        <a href="#vision" class="mt-20 text-white animate-bounce">
+            <i class="fa-solid fa-chevron-down text-3xl"></i>
+        </a>
+    </header>
+
+    <!-- Strategy / ROI Section -->
+    <section id="vision" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">POURQUOI ACS ? <span class="text-blue-600">LE ROI MÉDIA</span></h2>
+            <div class="h-1.5 w-24 bg-blue-600 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="bg-white p-12 rounded-[2.5rem] shadow-xl shadow-slate-200/50 card-hover border border-slate-100">
+                <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-200">
+                    <i class="fa-solid fa-chart-line text-white text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Acquisition Data</h3>
+                <p class="text-slate-600 text-lg leading-relaxed">
+                    Conversion directe de 1 000 étudiants CSP++ en abonnés Premium pour vos titres via des activations terrain QR-driven.
+                </p>
+            </div>
+            <div class="bg-white p-12 rounded-[2.5rem] shadow-xl shadow-slate-200/50 card-hover border border-slate-100">
+                <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-200">
+                    <i class="fa-solid fa-id-badge text-white text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Marque Employeur</h3>
+                <p class="text-slate-600 text-lg leading-relaxed">
+                    Accès exclusif au vivier Data d'Albert School. Recrutez les talents qui construiront vos futurs modèles IA.
+                </p>
+            </div>
+            <div class="bg-white p-12 rounded-[2.5rem] shadow-xl shadow-slate-200/50 card-hover border border-slate-100">
+                <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-blue-200">
+                    <i class="fa-solid fa-video text-white text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Content Studio</h3>
+                <p class="text-slate-600 text-lg leading-relaxed">
+                    Co-création de formats vidéo immersifs "Tech & Performance" pour alimenter vos plateformes sociales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-32 bg-slate-100 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div class="relative rounded-[3rem] overflow-hidden shadow-2xl h-[550px] group">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/14130164223953988508" alt="Voilier ACS en mer" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent p-12 flex flex-col justify-end">
+                        <h3 class="text-4xl font-bold text-white mb-4">Écologie & Inclusion</h3>
+                        <p class="text-slate-300 text-xl">Régate zéro plastique et intégration d'équipages handisport.</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-12 tracking-tight">UN ENGAGEMENT <br><span class="text-blue-600">SANS COMPROMIS</span></h2>
+                    <div class="space-y-10">
+                        <div class="flex gap-8">
+                            <div class="flex-shrink-0 w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center"><i class="fa-solid fa-envelope-open-text text-blue-600 text-3xl"></i></div>
+                            <div>
+                                <h4 class="text-2xl font-bold mb-2">1 Lettre 1 Sourire</h4>
+                                <p class="text-slate-500 text-lg">Lutte contre l'isolement des seniors. 300 lettres manuscrites rédigées par l'équipage pendant l'événement.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-8">
+                            <div class="flex-shrink-0 w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center"><i class="fa-solid fa-shield-halved text-blue-600 text-3xl"></i></div>
+                            <div>
+                                <h4 class="text-2xl font-bold mb-2">Fondation de la Mer</h4>
+                                <p class="text-slate-500 text-lg">Collectes de déchets et sensibilisation éco-data sur tout le village du Challenge Spi Dauphine.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="offres" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">INVESTISSEMENT STRATÉGIQUE</h2>
+            <div class="h-1.5 w-24 bg-blue-600 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6 items-stretch">
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 flex flex-col items-center text-center card-hover">
+                <p class="text-slate-400 font-bold uppercase tracking-widest text-xs mb-4">Moussaillon</p>
+                <p class="text-4xl font-black mb-10">2 500 €</p>
+                <ul class="text-slate-500 space-y-4 text-sm mb-10 text-left w-full flex-grow">
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Supports digitaux</li>
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Visibilité LinkedIn</li>
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Logo Village</li>
+                </ul>
+                <button class="w-full py-3 rounded-xl font-bold border-2 border-slate-200 hover:bg-slate-50 transition">Choisir</button>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 flex flex-col items-center text-center card-hover">
+                <p class="text-slate-400 font-bold uppercase tracking-widest text-xs mb-4">Matelot</p>
+                <p class="text-4xl font-black mb-10">5 000 €</p>
+                <ul class="text-slate-500 space-y-4 text-sm mb-10 text-left w-full flex-grow">
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Tenues Officielles</li>
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Distribution Goodies</li>
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Stand dédié Village</li>
+                </ul>
+                <button class="w-full py-3 rounded-xl font-bold border-2 border-slate-200 hover:bg-slate-50 transition">Choisir</button>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 flex flex-col items-center text-center card-hover">
+                <p class="text-slate-400 font-bold uppercase tracking-widest text-xs mb-4">Capitaine</p>
+                <p class="text-4xl font-black mb-10">10 000 €</p>
+                <ul class="text-slate-500 space-y-4 text-sm mb-10 text-left w-full flex-grow">
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Branding Coque</li>
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Tenues Mer & Terre</li>
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Campagne Social Media</li>
+                </ul>
+                <button class="w-full py-3 rounded-xl font-bold border-2 border-slate-200 hover:bg-slate-50 transition">Choisir</button>
+            </div>
+            <div class="gradient-bg p-8 rounded-3xl flex flex-col items-center text-center text-white shadow-2xl shadow-blue-500/30 scale-105 z-10 card-hover">
+                <p class="text-blue-400 font-bold uppercase tracking-widest text-xs mb-4">Amiral</p>
+                <p class="text-5xl font-black mb-10 text-white">20 000 €</p>
+                <ul class="text-slate-300 space-y-5 text-sm mb-10 text-left w-full flex-grow">
+                    <li class="font-bold text-white"><i class="fa-solid fa-star text-yellow-400 mr-2"></i> Grand Voile + Coque</li>
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Exclusivité Secteur Média</li>
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> 2 Amphis Recrutement</li>
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Accès Base Talents</li>
+                </ul>
+                <button class="w-full py-4 rounded-xl font-extrabold bg-blue-600 hover:bg-blue-700 transition shadow-lg shadow-blue-500/50 uppercase text-xs tracking-widest">Partenaire Titre</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer Section -->
+    <footer id="contact" class="gradient-bg py-32 px-6 text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-extrabold mb-8">PRÊT À LEVER L'ANCRE ?</h2>
+            <p class="text-xl text-slate-400 mb-16">Contactez-nous pour personnaliser votre activation et sécuriser votre exclusivité secteur.</p>
+            
+            <div class="grid md:grid-cols-3 gap-12 mb-20">
+                <div>
+                    <p class="text-blue-400 uppercase text-xs font-bold tracking-widest mb-2">Partenariats</p>
+                    <p class="text-xl font-bold">Mathéo Pradels</p>
+                    <p class="text-slate-400 text-sm mt-2">+33 7 66 09 60 66</p>
+                </div>
+                <div>
+                    <p class="text-blue-400 uppercase text-xs font-bold tracking-widest mb-2">Présidence</p>
+                    <p class="text-xl font-bold">Joseph Abdo</p>
+                    <p class="text-slate-400 text-sm mt-2">albertcrew@albertschool.com</p>
+                </div>
+                <div>
+                    <p class="text-blue-400 uppercase text-xs font-bold tracking-widest mb-2">Secrétariat</p>
+                    <p class="text-xl font-bold">Flore Jaskulké</p>
+                    <p class="text-slate-400 text-sm mt-2">@albertcrew_</p>
+                </div>
+            </div>
+
+            <div class="pt-12 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-xs">
+                <p>© 2025 ALBERT CREW SAILING - ALBERT SCHOOL x MINES PARIS x PSL</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition">LinkedIn</a>
+                    <a href="#" class="hover:text-white transition">Instagram</a>
+                    <a href="#" class="hover:text-white transition">Newsletter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
